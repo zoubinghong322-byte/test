@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>115570023鄒秉宏</title>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+    <script type="text/javascript">
+      function setTableStripe(color, parity) {
+        var table = document.getElementById("scoreTable");
+        var rows = table.getElementsByTagName("tr");
+        var properties = ["backgroundColor", "color", "fontSize", "fontWeight", "textAlign", "fontFamily"];
+        if (!table._stripeOriginals) {
+          table._stripeOriginals = [];
+          for (var j = 0; j < rows.length; j++) {
+            table._stripeOriginals[j] = {};
+            for (var k = 0; k < properties.length; k++) {
+              table._stripeOriginals[j][properties[k]] = rows[j].style[properties[k]];
+            }
+          }
+          table._stripeStates = {};
+        }
+        var active = table._stripeStates[parity];
+        for (var i = 0; i < rows.length; i++) {
+          if (i % 2 === parity) {
+            if (active) {
+              for (var p = 0; p < properties.length; p++) {
+                rows[i].style[properties[p]] = table._stripeOriginals[i][properties[p]];
+              }
+            } else {
+              rows[i].style.backgroundColor = color;
+              rows[i].style.color = "purple";
+              rows[i].style.fontSize = "30pt";
+              rows[i].style.fontWeight = "bold";
+              rows[i].style.textAlign = "center";
+              rows[i].style.fontFamily = "DFKai-SB, BiauKai, serif";
+            }
+          }
+        }
+        table._stripeStates[parity] = !active;
+      }
+    </script>
+
+</head>
+
+<body>
+  <div id="main">	
+    <div id="site_content">  
+	  <div id="menubar">
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li class="current"><a href="index.html">首頁</a></li>
+          <li><a href="a1.html">第一題</a></li>
+          <li><a href="a2.html">第二題</a></li>
+          <li><a href="a3.html">第三題</a></li>
+          <li><a href="a4.html">第四題</a></li>
+        </ul>
+	  </div><!--close menubar-->
+      <div id="header">  
+        <h1>115570023鄒秉宏</h1>	
+	    <h2>期中考</h2>
+      </div><!--close header-->	
+	  <div id="banner_image">
+	    <div id="slider-wrapper">        
+          <div id="slider" class="nivoSlider">
+            <img src="images/slide1.jpg" alt="" />
+            <img src="images/slide2.jpg" alt="" />
+            <img src="images/slide3.jpg" alt="" />
+		  </div><!--close slider-->
+		</div><!--close slider-wrapper-->
+	  </div><!--close banner_image-->		  
+      <div id="content">
+        <div class="content_item">
+          <h1 style="font: size 20px;pt;">設定表格條狀紋理</h1>
+          <hr>
+          <h1 style="display:inline; margin:0; font-size:30pt; color:brown; font-weight:bold;font-family:DFKai-SB, BiauKai, serif;">顏色1:</h1><button type="button" onclick="setTableStripe('pink', 0)" style="color:purple; font-size:30pt; font-weight:bold; text-align:center; font-family:DFKai-SB, BiauKai, serif;">粉紅</button>
+          <div style="margin-top:20px;"><h1 style="display:inline; margin:0; font-size:30pt; color:brown; font-weight:bold;font-family:DFKai-SB, BiauKai, serif;">顏色2:</h1><button type="button" onclick="setTableStripe('yellow', 1)" style="color:purple; font-size:30pt; font-weight:bold; text-align:center; font-family:DFKai-SB, BiauKai, serif;">黃色</button></div>
+
+          <table id="scoreTable" style="width:90%; border-collapse:collapse; margin-top:20px; color:purple; font-size:30pt; font-weight:bold; text-align:center; font-family:DFKai-SB, BiauKai, serif;" border="1">
+            <tr><td style="padding:8px;">姓名</td><td style="padding:8px;">數學</td></tr>
+            <tr><td style="padding:8px;">約翰</td><td style="padding:8px;">90</td></tr>
+            <tr><td style="padding:8px;">艾米</td><td style="padding:8px;">92</td></tr>
+            <tr><td style="padding:8px;">彼德</td><td style="padding:8px;">75</td></tr>
+            <tr><td style="padding:8px;">蘇珊</td><td style="padding:8px;">99</td></tr>
+            <tr><td style="padding:8px;">湯姆</td><td style="padding:8px;">62</td></tr>
+            <tr><td style="padding:8px;">傑克</td><td style="padding:8px;">72</td></tr>
+          </table>
+
+          <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you wish to remove the 'ARaynorDesign' link in the footer of the template, please contact me first, but other than that...</p>
+          <h3>Place your heading here</h3>
+          <div style="width:200px; float:left; padding: 0px 20px 10px 0px;"><img alt="image" src="images/image.jpg" /></div>
+          <p>This website template uses the fancybox jquery tool to enhance the website, click on the image to the right to see. </p>
+          <p>Ut tincidunt, ante vel fermentum iaculis, turpis sem pulvinar diam, sit amet ullamcorper nibh dui ac nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos:</p>
+          <p>Vestibulum tempus urna vitae neque vehicula sit amet tristique felis ultrices. Phasellus eu laoreet mauris. Integer sit amet ante nec ipsum euismod hendrerit et eget sapien. Duis velit ante, semper nec dapibus adipiscing, pellentesque vitae orci. Etiam adipiscing, justo ut faucibus placerat, neque libero accumsan ipsum, non pellentesque ligula nibh id justo. Aenean tellus nisl, bibendum vitae sollicitudin id, faucibus ut mi.</p>
+          <p>Vestibulum tempus urna vitae neque vehicula sit amet tristique felis ultrices. Phasellus eu laoreet mauris. Integer sit amet ante nec ipsum euismod hendrerit et eget sapien. Duis velit ante, semper nec dapibus adipiscing, pellentesque vitae orci. Etiam adipiscing, justo ut faucibus placerat, neque libero accumsan ipsum, non pellentesque ligula nibh id justo. Aenean tellus nisl, bibendum vitae sollicitudin id, faucibus ut mi.</p>
+		</div><!--close content_item-->	
+	      
+		<div class="sidebar_container">   		  
+		  <div class="sidebar">
+            <div class="sidebar_item">
+                <h2>Latest Blog</h2>
+			    <h4>April 2012</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+		          <a href="#">Read more</a>
+              </div><!--close sidebar_item--> 
+          </div><!--close sidebar-->     		
+		  <div class="sidebar">
+            <div class="sidebar_item">
+              <h2>Latest Blog</h2>
+		  	  <h4>April 2012</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+		        <a href="#">Read more</a>
+            </div><!--close sidebar_item--> 
+          </div><!--close sidebar-->  
+		  <div class="sidebar">
+            <div class="sidebar_item">
+              <h2>Latest Blog</h2>
+			  <h4>April 2012</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+		        <a href="#">Read more</a>
+            </div><!--close sidebar_item--> 
+          </div><!--close sidebar-->  
+        </div><!--close sidebar_container-->	
+       <br style="clear:both;" />
+      </div><!--close content-->	
+    </div><!--close site_content-->	
+    <div id="footer">  
+      <footer>
+  <p>&copy;版權所有 2026 by 115570023鄒秉宏</p>
+</footer>   </div><!--close footer-->	
+  </div><!--close main-->	
+</body>
+</html>
